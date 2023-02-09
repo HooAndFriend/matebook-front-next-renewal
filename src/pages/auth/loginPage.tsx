@@ -4,7 +4,7 @@ import Link from "next/link"
 // ** Custom Hooks Imports
 import useInput from "@/hooks/useInput"
 
-// ** assets Imports
+// ** Assets Imports
 import Color from "@/assets/color"
 
 // ** Mui Imports
@@ -19,7 +19,7 @@ function LoginPage() {
   const handleClickLogin = () => {}
 
   return (
-    <Grid container spacing={4} sx={{ px: 120, py: 40 }}>
+    <Grid container spacing={6} sx={{ px: 60, py: 10 }}>
       <Grid item xs={12}>
         <Typography variant="h4" color="white">
           matebook
@@ -69,7 +69,7 @@ function LoginPage() {
         <Button
           variant="contained"
           fullWidth
-          sx={{ backgroundColor: Color.naver, minHeight: 60 }}
+          sx={{ backgroundColor: Color.naver, minHeight: 55 }}
         >
           네이버 로그인
         </Button>
@@ -78,7 +78,7 @@ function LoginPage() {
         <Button
           variant="contained"
           fullWidth
-          sx={{ backgroundColor: Color.kakao, minHeight: 60, color: "black" }}
+          sx={{ backgroundColor: Color.kakao, minHeight: 55, color: "black" }}
         >
           카카오계정 로그인
         </Button>
