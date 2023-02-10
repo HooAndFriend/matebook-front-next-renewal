@@ -1,7 +1,11 @@
-import { Grid, Typography } from "@mui/material"
+// ** Nest Imports
 import Image from "next/image"
 
+// ** Assets Imports
 import egg from "@/assets/imgs/egg.png"
+
+// ** Mui Imports
+import { Grid, Typography } from "@mui/material"
 import ColorLensIcon from "@mui/icons-material/ColorLens"
 
 function HomeFirstView() {
@@ -83,11 +87,7 @@ function HomeFirstView() {
         </Grid>
       </Grid>
       <Grid item xs={5}>
-        <Image
-          src={egg}
-          alt="Picture of me"
-          placeholder="blur" // Optional blur-up while loading
-        />
+        <Image src={egg} alt="Picture of me" placeholder="blur" />
       </Grid>
     </Grid>
   )
